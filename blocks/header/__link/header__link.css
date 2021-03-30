@@ -1,0 +1,38 @@
+.header__link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 22px 16px 20px;
+    background-image: url(../../../images/background.png);
+    background-size: 100% 100%;
+    color: inherit;
+    z-index: 1;
+  }
+.header__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .header__link:hover::after {
+    opacity: 0.8;
+  }
+  
+  @media (min-width: 768px) {
+    .header__link {
+      padding: 115px 90px 59px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .header__link {
+      padding: 196px 90px 129px;
+    }
+  }
